@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		224165B120B16EBD009C043B /* Boundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224165B020B16EBD009C043B /* Boundary.swift */; };
+		224165B320B17FAE009C043B /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224165B220B17FAE009C043B /* Part.swift */; };
+		224165B520B1914A009C043B /* MultipartEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224165B420B1914A009C043B /* MultipartEntity.swift */; };
+		224165BA20B1BDC8009C043B /* URLRequest+multipartBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224165B920B1BDC8009C043B /* URLRequest+multipartBody.swift */; };
+		22E0E49420B4364F0080C428 /* MessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0E49320B4364F0080C428 /* MessageHeader.swift */; };
+		OBJ_22 /* Multipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Multipart.swift */; };
+		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		224165B020B16EBD009C043B /* Boundary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boundary.swift; sourceTree = "<group>"; };
+		224165B220B17FAE009C043B /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
+		224165B420B1914A009C043B /* MultipartEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartEntity.swift; sourceTree = "<group>"; };
+		224165B920B1BDC8009C043B /* URLRequest+multipartBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+multipartBody.swift"; sourceTree = "<group>"; };
+		22E0E49320B4364F0080C428 /* MessageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHeader.swift; sourceTree = "<group>"; };
+		22E0E49520B463570080C428 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		"Multipart::Multipart::Product" /* Multipart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Multipart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Multipart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipart.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		224165B820B1BDA8009C043B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				224165B920B1BDC8009C043B /* URLRequest+multipartBody.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Multipart::Multipart::Product" /* Multipart.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_14 /* Products */,
+				22E0E49520B463570080C428 /* README.md */,
+				OBJ_7 /* Sources */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Multipart */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* Multipart */ = {
+			isa = PBXGroup;
+			children = (
+				224165B020B16EBD009C043B /* Boundary.swift */,
+				224165B820B1BDA8009C043B /* Extensions */,
+				22E0E49320B4364F0080C428 /* MessageHeader.swift */,
+				OBJ_9 /* Multipart.swift */,
+				224165B420B1914A009C043B /* MultipartEntity.swift */,
+				224165B220B17FAE009C043B /* Part.swift */,
+			);
+			name = Multipart;
+			path = Sources/Multipart;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Multipart::Multipart" /* Multipart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "Multipart" */;
+			buildPhases = (
+				OBJ_21 /* Sources */,
+				OBJ_23 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Multipart;
+			productName = Multipart;
+			productReference = "Multipart::Multipart::Product" /* Multipart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Multipart::SwiftPMPackageDescription" /* MultipartPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "MultipartPackageDescription" */;
+			buildPhases = (
+				OBJ_28 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultipartPackageDescription;
+			productName = MultipartPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Multipart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Multipart::Multipart" /* Multipart */,
+				"Multipart::SwiftPMPackageDescription" /* MultipartPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				224165BA20B1BDC8009C043B /* URLRequest+multipartBody.swift in Sources */,
+				224165B520B1914A009C043B /* MultipartEntity.swift in Sources */,
+				22E0E49420B4364F0080C428 /* MessageHeader.swift in Sources */,
+				OBJ_22 /* Multipart.swift in Sources */,
+				224165B320B17FAE009C043B /* Part.swift in Sources */,
+				224165B120B16EBD009C043B /* Boundary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_29 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Multipart.xcodeproj/Multipart_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Multipart;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Multipart;
+			};
+			name = Debug;
+		};
+		OBJ_20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Multipart.xcodeproj/Multipart_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Multipart;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Multipart;
+			};
+			name = Release;
+		};
+		OBJ_26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_18 /* Build configuration list for PBXNativeTarget "Multipart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_19 /* Debug */,
+				OBJ_20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "Multipart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_25 /* Build configuration list for PBXNativeTarget "MultipartPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_26 /* Debug */,
+				OBJ_27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
