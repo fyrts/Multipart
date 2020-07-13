@@ -44,7 +44,7 @@ extension Array where Iterator.Element == MessageHeader {
             return self.first(where: {$0.name == key})
         }
         set {
-            if let index = self.index(where: {$0.name == key}) {
+            if let index = self.firstIndex(where: {$0.name == key}) {
                 self.remove(at: index)
                 if let newValue = newValue {
                     self.insert(newValue, at: index)
@@ -56,7 +56,7 @@ extension Array where Iterator.Element == MessageHeader {
     }
     
     public mutating func remove(_ key: String) {
-        if let index = self.index(where: {$0.name == key}) {
+        if let index = self.firstIndex(where: {$0.name == key}) {
             self.remove(at: index)
         }
     }
