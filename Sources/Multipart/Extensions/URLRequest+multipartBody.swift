@@ -1,5 +1,9 @@
 import Foundation
 
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
+
 extension URLRequest {
     /// Set multipart MIME data as the message body of the request, such as for an HTTP POST request.
     /// - Parameter multipart: the multipart MIME body to send
