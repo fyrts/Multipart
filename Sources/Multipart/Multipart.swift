@@ -3,8 +3,8 @@ import Foundation
 /// Defines a message in which one or more different sets of data are combined according to the MIME standard.
 /// - SeeAlso: Defined in [RFC 2046, Section 5.1](https://tools.ietf.org/html/rfc2046#section-5.1)
 public struct Multipart {
-    static let CRLF = "\r\n"
-    static let CRLFData = Multipart.CRLF.data(using: .utf8)!
+    public static let CRLF = "\r\n"
+    public static let CRLFData = Multipart.CRLF.data(using: .utf8)!
     
     /// A string that is optionally inserted before the first boundary delimiter. Can be used as an explanatory note for
     /// recipients who read the message with pre-MIME software, since such notes will be ignored by MIME-compliant software.
@@ -13,9 +13,9 @@ public struct Multipart {
     /// Message headers that apply to this body part.
     public var headers: [MessageHeader] = []
     
-    let type: Subtype
-    let boundary = Boundary()
-    var entities: [MultipartEntity]
+    public let type: Subtype
+    public let boundary = Boundary()
+    public private(set) var entities: [MultipartEntity]
     
     /// Creates and initializes a Multipart body with the given subtype.
     /// - Parameter type: The multipart subtype
